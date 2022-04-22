@@ -1,5 +1,6 @@
 const express = require('express');
 const inquirer = require('inquirer');
+const db = require('./db/connection');
 const app = express();
 
 // Express middleware
@@ -24,50 +25,63 @@ const start_menu = () => {
         }
     ])
     .then(menu_choice => {
-        console.log(menu_choice)
-        if (menu_choice = "View All Departments") {
+        console.log(menu_choice.menu_navigation_choice)
+        if (menu_choice.menu_navigation_choice == 'View All Departments') {
             console.log(`
 
     You have chosen to view all departments! Please wait a moment as we display them below.
 
             `)
         }
-        else if (menu_choice = "View All Roles") {
+        else if (menu_choice.menu_navigation_choice == 'View All Roles') {
             console.log(`
         
     You have chosen to view all roles! Please wait a moment as we display them below.
 
             `)
         }
-        else if (menu_choice = "View All Employees") {
+        else if (menu_choice.menu_navigation_choice == 'View All Employees') {
             console.log(`
             
     You have chosen to view all employees! Please wait a moment as we display them below.
 
             `)
         }
-        else if (menu_choice = "Add A Department") {
+        else if (menu_choice.menu_navigation_choice == 'Add A Department') {
             console.log(`
             
     You have chosen to add a department!
             
             `)
         }
-        else if (menu_choice = "Add A Role") {
+        else if (menu_choice.menu_navigation_choice == 'Add A Role') {
             console.log(`
             
     You have chosen to add a new role!
 
             `)
         }
-        else if (menu_choice = "Add An Employee") {
+        else if (menu_choice.menu_navigation_choice == 'Add An Employee') {
+            console.log(`
+            
+    You have chosen to add a new employee!
+            
+            `)
 
         }
-        else if (menu_choice = "Update an Employee Role") {
-
+        else if (menu_choice.menu_navigation_choice == 'Update an Employee Role') {
+            console.log(`
+            
+    You have chosen to update an employee's role!
+            
+            `)
         }
-        else if (menu_choice = "End Session") {
-
+        else if (menu_choice.menu_navigation_choice == 'End Session') {
+            console.log(`
+            
+    Okay~ Have a pleasant rest of your day!
+            
+            `)
         }
     })
 }

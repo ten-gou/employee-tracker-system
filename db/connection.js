@@ -1,9 +1,6 @@
 const mysql = require('mysql2');
 const login = require('./env-login')
 
-
-console.log(login)
-console.log(login.DB_NAME)
 // Connect to sql database
 const db = mysql.createConnection(
     {
@@ -15,6 +12,6 @@ const db = mysql.createConnection(
       database: `${login.DB_NAME}`
     },
     console.log('Connected to the Employee Tracker System.')
-  );  
+  );
 
   module.exports = db;

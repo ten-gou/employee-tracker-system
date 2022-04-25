@@ -25,7 +25,8 @@ Made by Libin Wang, this program is considered to be under Public Domain License
 ## 1. Description
 A MySQL and JS based database program which allows you to manage departments, jobs, and employees
 
-### 1-1. Picture Examples
+### 1-1. Picture/Video Examples
+[Link to a video tutorial demonstrating the program functionality](https://drive.google.com/file/d/1wVWco1GFpozCAFL_jG97JrAPghp7g7Sa/view?usp=sharing)
 
 ### 1-2. Known Bugs
 The formatting of the elements tend to eat at each other if you carelessly press the arrow keys to advance, so make sure that you grasp the information before clicking the arrow keys to proceed.

@@ -1,6 +1,6 @@
 const login = 
     {
-        DB_NAME: "placeholder",
+        DB_NAME: workplace,
         DB_USER: "placeholder",
         DB_PASSWORD: "placeholder",
     }
